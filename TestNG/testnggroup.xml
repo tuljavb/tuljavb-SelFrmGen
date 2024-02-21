@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="invalidlogin"/>
+		</run>
+	</groups>
+	
+  <test thread-count="5" name="stest">
+    <classes>
+      <class name="tests.singleTest"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+ <test thread-count="5" name="ttest">
+    <classes>
+      <class name="tests.twoTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Login">
+    <classes>
+      <class name="tests.invalidLoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
